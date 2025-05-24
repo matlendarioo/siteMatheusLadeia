@@ -1,0 +1,59 @@
+/* Reset Básicp */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: all;
+}
+body {
+    background-color: aliceblue;
+}
+/* Formatação do Layout Principal (main) */
+main {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 100%;
+    min-height: 100vh;
+}
+/* Configurando a coluna esquerda com FlexBox */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    background-color: brown;
+}
+/* Configurando a foto de perfil */
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+/* Formatar informações do perfil */
+figcaption {
+    margin-bottom: 12px;
+    text-align: left;
+    align-self: flex-start;
+}
+/* Configurar a seção de artigos */
+section {
+    padding: 32px;
+    background-color: cornflowerblue;
+}
+article {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+article h1 {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+article p {
+    line-height: 1.5;
+}
